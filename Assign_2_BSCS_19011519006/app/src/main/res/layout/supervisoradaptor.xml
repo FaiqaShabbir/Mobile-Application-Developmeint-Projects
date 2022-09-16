@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/D21"
+    android:elevation="4dp"
+    app:cardCornerRadius="11dp"
+    app:cardElevation="11dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/cardbg"
+        android:backgroundTint="@color/Mauve"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:hint="Student Name"
+            android:text="Student Name"
+            android:textColor="@color/ShadesOfGrey"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fatherName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Father Name"
+            android:textColor="#FDF6F6"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/registrationNo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Registration No."
+            android:textColor="#FAF2F2"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/synop1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:text="Research Topic 1"
+            android:textColor="@color/A43"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Summ1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Summary 1"
+            android:textColor="#FAF7F7"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/SupSign1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Supervisor Sign 1"
+            android:textColor="#F8F4F4"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Synop2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:text="Research Topic 2"
+            android:textColor="@color/A43"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Summ2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Summary 2"
+            android:textColor="#F4F3F3"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/SupSign2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Supervisor Sign 2"
+            android:textColor="#F4F0F0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/Synop3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:elegantTextHeight="true"
+            android:text="Research Topic 3"
+            android:textColor="@color/A43"
+            android:textColorHighlight="#146C57"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Summ3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Summary 3"
+            android:textColor="#F3F1F1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/SupSign3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Supervisor Sign 3"
+            android:textColor="#FAF6F6"
+            android:textSize="25sp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_Del"
+                android:layout_width="125dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/black"
+                android:text="DELETE"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_Edit"
+                android:layout_width="125dp"
+                android:layout_height="63dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/A43"
+                android:text="Edit"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

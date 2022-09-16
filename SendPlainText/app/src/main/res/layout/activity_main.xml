@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/salmon"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="83dp"
+        android:layout_height="55dp"
+        android:onClick="btnSend"
+        android:text="SEND"
+        android:backgroundTint="@color/dark_salmon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.278" />
+
+    <EditText
+        android:id="@+id/plainText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textLongMessage|text"
+        android:text="Enter your Information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.147" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/dark_salmon"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="427dp"
+        android:onClick="openActivity"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnClick" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="277dp"
+        android:entries="@array/Days"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="43dp"
+        android:backgroundTint="@color/dark_salmon"
+        android:layout_marginBottom="54dp"
+        android:onClick="openSpinner"
+        android:text="Spinner"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="208dp"
+        android:backgroundTint="@color/dark_salmon"
+        android:onClick="onContact"
+        android:text="Get Contacts"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/dark_salmon"
+        android:onClick="onPicture"
+        android:text="Take Picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <Button
+        android:id="@+id/alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="81dp"
+        android:backgroundTint="@color/dark_salmon"
+        android:onClick="onAlarm"
+        android:text="Set Alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/picture"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/dark_salmon"
+        android:onClick="onReminder"
+        android:text="Set Reminder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarm" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

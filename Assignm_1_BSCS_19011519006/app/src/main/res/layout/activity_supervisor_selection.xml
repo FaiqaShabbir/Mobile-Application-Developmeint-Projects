@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/Crocus_Purple"
+    tools:context=".SupervisorSelection">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="409dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="77dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Supervisor Selection Form"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Date:"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_form" />
+
+            <EditText
+                android:id="@+id/edt_date"
+                android:layout_width="172dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="46dp"
+                android:ems="10"
+                android:fontFamily="@font/adamina"
+                android:inputType="date"
+                app:layout_constraintBottom_toTopOf="@+id/edt_CName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_form" />
+
+            <TextView
+                android:id="@+id/txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="57dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Name of Candidate"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_FName"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_CName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="25dp"
+                android:ems="10"
+                android:hint="Candidate Name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_Fname"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_FName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="48dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Father’s Name"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_regist"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_Fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="23dp"
+                android:ems="10"
+                android:hint="Father name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_reg"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="53dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Registration No."
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_super"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="Registration Number"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_super"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_super"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="58dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Names of Supervisors"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_synopsis"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="81dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Research Topic 1"
+                app:layout_constraintBottom_toTopOf="@+id/txt_summ"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_synop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="17dp"
+                android:ems="10"
+                android:hint="Reasearch Topic 1"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_summ"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_summ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="66dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Summary"
+                app:layout_constraintBottom_toTopOf="@+id/txt_signa"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_summ"
+                android:layout_width="207dp"
+                android:layout_height="99dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="27dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Summary......"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/edt_sign"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_summ2"
+                android:layout_width="217dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Summary......"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/edt_sign2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_summ3"
+                android:layout_width="217dp"
+                android:layout_height="125dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="25dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Summary......"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/edt_sign3"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_signa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="46dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Supervisor’s Signature"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txt_synop2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="21dp"
+                android:ems="10"
+                android:hint="sugnature here"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_synop2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_synop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="102dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Research Topic 2"
+                app:layout_constraintBottom_toTopOf="@+id/txt_summ2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_synop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="28dp"
+                android:ems="10"
+                android:hint="Research Topic 2"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_summ2"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_summ2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="80dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Summary"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sign"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Supervisor’s Signature"
+                app:layout_constraintBottom_toTopOf="@+id/txt_synop3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_sign2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="45dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Supervisor’s Signature"
+                app:layout_constraintBottom_toTopOf="@+id/txt_comments"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_sign2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:hint="Supervisor's Signature"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_synop3"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_sign3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="18dp"
+                android:ems="10"
+                android:hint="Supervisor's Signature"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/rd_1"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_synop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="96dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Research Topic 3"
+                app:layout_constraintBottom_toTopOf="@+id/txt_summ3"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_synop3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="28dp"
+                android:ems="10"
+                android:hint="Research topic 3"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edt_summ3"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_summ3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="90dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Summary"
+                app:layout_constraintBottom_toTopOf="@+id/txt_sign2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="74dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Committee Comments"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioButton
+                android:id="@+id/rd_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="23dp"
+                android:layout_marginBottom="62dp"
+                android:onClick="onClickWrite"
+                android:text="Accept"
+                app:layout_constraintBottom_toTopOf="@+id/btn_save"
+                app:layout_constraintEnd_toStartOf="@+id/rd_2" />
+
+            <RadioButton
+                android:id="@+id/rd_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:layout_marginBottom="110dp"
+                android:text="Reject"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginEnd="166dp"
+                android:fontFamily="sans-serif-black"
+                android:onClick="onSendClick"
+                android:text="SAVE"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_super"
+                android:layout_width="208dp"
+                android:layout_height="69dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Supervisor's names"
+                android:inputType="textMultiLine"
+                app:layout_constraintBottom_toTopOf="@+id/edt_synop"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
